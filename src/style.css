@@ -355,23 +355,7 @@ footer p{
   font-weight: bold;
 }
 
-body.light {
-  color: #000000;
-}
-body.light section {
-  background: #ffffff6e;
-  color: #00000098;
-}
-body.light .dark-nav {
-  background: rgba(255, 255, 255, 0);
-}
-body.light .dark-nav a {
-  color: #000;
-}
-body.light footer {
-  background: #eee;
-  color: #000;
-}
+
 .theme-btn {
   background: none;
   border: none;
@@ -379,28 +363,6 @@ body.light footer {
   cursor: pointer;
 }
 
-
-body.light {
-  color:black;
-}
-body.light h1,
-body.light h2,
-body.light h3,
-body.light p,
-body.light li,
-body.light span {
-  color: #000;
-}
-body.light section {
-  background: #ffffff76;
-}
-body.light .subtitle {
-  color: #555;
-}
-body.light .service-card {
-  background: #ffffff77;
-  color: #000;
-}
 
 .testimonial-card {
   background: #11111180;
@@ -431,15 +393,6 @@ body.light .service-card {
   font-weight: bold;
   color: #d97000;
 }
-body.light .testimonial-card {
-  background: #ffffff56;
-  color: #00000000;
-}
-body.light .avatar {
-  border-color: #d40000;
-}
-
-
 .modal {
   position: fixed;
   inset: 0;
@@ -465,4 +418,3 @@ body.light .avatar {
   font-size: 22px;
   cursor: pointer;
 }
-
