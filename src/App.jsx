@@ -8,10 +8,9 @@ import Contact from "./Contact.jsx";
 function App() {
   const [page, setPage] = useState("home");
 
-
   return (
     <>
-      <Navbar setPage={setPage} />
+      <Navbar setPage={setPage} currentPage={page} />
 
       {page === "home" && <Home />}
       {page === "about" && <About />}

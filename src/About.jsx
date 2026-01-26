@@ -1,9 +1,18 @@
+import React from "react";
+import "./About.css";
+
 function About() {
   return (
     <>
       <section className="section">
         <h2>About ST-GYM</h2>
-        <p>ST-GYM est une salle moderne pour atteindre vos objectifs.</p>
+        <p>
+          Est une salle de sport moderne proposant des équipements de haute
+          qualité, des cours collectifs et un coaching personnalisé. Adaptée à
+          tous les niveaux, elle offre un environnement motivant et confortable
+          pour aider ses membres à atteindre leurs objectifs de forme et de
+          bien-être.
+        </p>
       </section>
 
       <section className="testimonials">

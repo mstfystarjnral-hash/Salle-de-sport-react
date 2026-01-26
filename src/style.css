@@ -13,59 +13,12 @@ body {
 }
 
 @keyframes wave {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
-}
-
-/* ================= NAVBAR ================= */
-.dark-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background: linear-gradient(to right, #0c0c0c00, #0c0c0c00);
-}
-
-.nav-left {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.logo-img {
-  width: 40px;
-  height: 40px;
-  object-fit: contain;
-}
-
-.logo-text {
-  font-size: 1.3rem;
-  font-weight: bold;
-  color: #ffffff;
-}
-
-.dark-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 30px;
-}
-
-.dark-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 16px;
-  transition: transform 0.25s ease, color 0.25s ease;
-}
-
-.dark-nav a:hover {
-  transform: translateY(-5px);
-  color: #ff6a00;
-}
-
-.dark-nav a.active {
-  color: #ff6a00;
-  border-bottom: 2px solid #ff6a00;
-  padding-bottom: 4px;
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
 }
 
 /* ================= HEADER ================= */
@@ -85,12 +38,14 @@ section {
   margin: 20px;
   padding: 20px;
   border-radius: 8px;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 section:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
 h2 {
@@ -100,14 +55,15 @@ h2 {
 
 /* ================= GALLERY ================= */
 .Photo {
+  margin-top: 3rem;
   display: flex;
   gap: 10px;
   justify-content: center;
 }
 
 .Photo img {
-  width: 200px;
-  height: 90px;
+  width: 30%;
+  /* height: 15%; */
   object-fit: cover;
   border-radius: 8px;
   transition: transform 0.3s ease;
@@ -259,12 +215,14 @@ h2 {
   border-radius: 20px;
   text-align: center;
   position: relative;
-  transition: transform 0.35s ease, box-shadow 0.35s ease;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease;
 }
 
 .service-card:hover {
   transform: translateY(-12px);
-  box-shadow: 0 25px 60px rgba(0,0,0,0.25);
+  box-shadow: 0 25px 60px rgba(0, 0, 0, 0.25);
 }
 
 .service-card img {
@@ -281,31 +239,6 @@ h2 {
 
 .featured {
   border: 2px solid #ff6a00;
-}
-
-/* ================= TESTIMONIALS ================= */
-.testimonial-card {
-  background: #0c0c0c80;
-  padding: 30px 20px;
-  border-radius: 18px;
-  text-align: center;
-  transition: 0.3s;
-}
-
-.testimonial-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
-}
-
-.avatar {
-  width: 70px;
-  height: 70px;
-  border-radius: 50%;
-  border: 3px solid #ff6a00;
-}
-
-.stars {
-  color: #ffb703;
 }
 
 /* ================= FOOTER ================= */
@@ -330,7 +263,7 @@ footer {
   background: #161616a8;
   padding: 25px;
   border-radius: 16px;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.35);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.35);
 }
 
 .day {
@@ -377,9 +310,9 @@ footer {
   inset: 0;
   background: linear-gradient(
     to right,
-    rgba(0,0,0,0.9),
-    rgba(0,0,0,0.6),
-    rgba(0,0,0,0.9)
+    rgba(0, 0, 0, 0.9),
+    rgba(0, 0, 0, 0.6),
+    rgba(0, 0, 0, 0.9)
   );
 }
 
@@ -430,7 +363,7 @@ footer {
 .cta-btn:hover {
   background: #ff4500;
   transform: translateY(-4px);
-  box-shadow: 0 15px 30px rgba(0,0,0,0.5);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
 }
 
 @keyframes fadeUp {

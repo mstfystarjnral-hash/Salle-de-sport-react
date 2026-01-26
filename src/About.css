@@ -1,0 +1,37 @@
+/* ================= TESTIMONIALS ================= */
+.section {
+  text-align: center;
+}
+.testimonials {
+  padding: 60px 20px;
+  text-align: center;
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+.testimonial-card {
+  width: 50%;
+  background: #0c0c0c80;
+  padding: 30px 20px;
+  border-radius: 18px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+.avatar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  border: 3px solid #ff6a00;
+}
+
+.stars {
+  color: #ffb703;
+}
