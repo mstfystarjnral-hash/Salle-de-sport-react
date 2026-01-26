@@ -6,44 +6,91 @@ function Home() {
         <h1>ST-GYM</h1>
         <p>Transformez votre corps, améliorez votre vie</p>
       </header>
-      {/* WHY CHOOSE US */}
-      <section>
-        <h2>Pourquoi choisir ST-GYM ?</h2>
-        <ul>
-          <li>✔ Équipements modernes et performants</li>
-          <li>✔ Coachs professionnels certifiés</li>
-          <li>✔ Programmes adaptés à tous les niveaux</li>
-          <li>✔ Ambiance motivante et conviviale</li>
-          <li>✔ Résultats visibles et durables</li>
-        </ul>
-      </section>
+
+      
+<section className="why-hero">
+  <div className="why-overlay"></div>
+
+  <div className="why-content">
+    <span className="why-subtitle">Pourquoi nous choisir ?</span>
+
+    <h2>
+      UNE SALLE DE SPORT<br />
+      ADAPTÉE À TOUS
+    </h2>
+
+    <p>
+      ST-GYM vous accompagne chaque jour pour atteindre vos objectifs.
+      Débutant ou confirmé, profitez d’équipements modernes,
+      d’un encadrement professionnel et d’une ambiance motivante.
+    </p>
+
+    <button className="cta-btn">Devenez un membre</button>
+  </div>
+</section>
+
       {/* ABOUT */}
-      <section>
+      <section className="section">
         <h2>À propos de nous</h2>
         <p>
           ST-GYM est une salle de sport moderne dédiée à votre bien-être.
-          Nous vous accompagnons dans votre transformation physique avec
-          des programmes personnalisés et un suivi professionnel.
+          Nous vous accompagnons avec des programmes personnalisés et
+          un suivi professionnel.
         </p>
       </section>
+
+      {/* OPENING HOURS */}
+<section className="opening-hours">
+  <h2>Horaires d’ouverture</h2>
+
+  <div className="hours-card animated-card">
+    <div className="status">🟢 Ouvert maintenant</div>
+
+    <div className="day">
+      <span>Lundi – Vendredi</span>
+      <strong>06:00 – 23:00</strong>
+    </div>
+
+    <div className="day">
+      <span>Samedi</span>
+      <strong>08:00 – 22:00</strong>
+    </div>
+
+    <div className="day">
+      <span>Dimanche</span>
+      <strong>08:00 – 14:00</strong>
+    </div>
+  </div>
+
+  <p className="hours-note">
+    ⏱️ Accès flexible – entraînez-vous quand vous voulez
+  </p>
+</section>
+
+
+
+
+
       {/* MOTIVATION */}
-      <section>
+      <section className="section motivation">
         <h2>Motivation</h2>
         <p>
           Ne repousse pas à demain ce que tu peux transformer aujourd’hui.
-          La meilleure version de toi-même commence ici.
+          La meilleure version de toi-même commence ici 💪
         </p>
       </section>
+
       {/* GALLERY */}
-      <section>
+      <section className="section">
         <h2>Notre salle en images</h2>
         <div className="Photo">
           <img src="/images/gym3.jpg" alt="Gym 1" />
           <img src="/images/gym4.jpg" alt="Gym 2" />
           <img src="/images/gym5.jpg" alt="Gym 3" />
-          </div>
-          </section>
+        </div>
+      </section>
     </>
   );
 }
+
 export default Home;
