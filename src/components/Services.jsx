@@ -1,3 +1,6 @@
+import React from "react";
+import "../styles/Services.css";
+
 export default function Services() {
   return (
     <section className="services">
@@ -9,7 +12,9 @@ export default function Services() {
           <span className="tag">GYM</span>
           <h3>Musculation</h3>
           <p className="subtitle">Accès libre & machines modernes</p>
-          <p className="price">60 TND <small>/ mois</small></p>
+          <p className="price">
+            60 TND <small>/ mois</small>
+          </p>
           <button className="service-btn light">Découvrir</button>
           <ul>
             <li>✔ Machines professionnelles</li>
@@ -24,7 +29,9 @@ export default function Services() {
           <span className="tag">COACHING</span>
           <h3>Personal Training</h3>
           <p className="subtitle">Programme sur mesure</p>
-          <p className="price">90 TND <small>/ mois</small></p>
+          <p className="price">
+            90 TND <small>/ mois</small>
+          </p>
           <button className="service-btn dark">Découvrir</button>
           <span className="recommended">Recommandé</span>
           <ul>
@@ -40,7 +47,9 @@ export default function Services() {
           <span className="tag">TRANSFORMATION</span>
           <h3>Premium 🎫</h3>
           <p className="subtitle">Coaching + Nutrition</p>
-          <p className="price">160 TND <small>/ mois</small></p>
+          <p className="price">
+            160 TND <small>/ mois</small>
+          </p>
           <button className="service-btn gradient">Découvrir</button>
           <ul>
             <li>✔ Coaching avancé</li>
@@ -51,5 +60,5 @@ export default function Services() {
         </div>
       </div>
     </section>
-  )
+  );
 }

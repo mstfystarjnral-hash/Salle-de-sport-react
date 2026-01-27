@@ -1,6 +1,6 @@
 import { useState, useRef } from "react";
 import emailjs from "@emailjs/browser";
-
+import "../styles/Contact.css";
 function Contact() {
   const form = useRef();
   const [success, setSuccess] = useState(false);
@@ -13,10 +13,10 @@ function Contact() {
 
     emailjs
       .sendForm(
-        "sr6zy28",   //SERVICE ID
-        "template_9r58xnl",  //TEMPLATE ID
+        "sr6zy28", //SERVICE ID
+        "template_9r58xnl", //TEMPLATE ID
         form.current,
-        "rqXXSMFBN9wfEz2Uk"       //PUBLIC KEY
+        "rqXXSMFBN9wfEz2Uk", //PUBLIC KEY
       )
       .then(
         () => {
@@ -25,7 +25,7 @@ function Contact() {
         },
         () => {
           setError(true);
-        }
+        },
       );
   };
 
@@ -76,9 +76,7 @@ function Contact() {
       )}
 
       {error && (
-        <div className="error-message show">
-          ❌ Erreur, réessayez !
-        </div>
+        <div className="error-message show">❌ Erreur, réessayez !</div>
       )}
     </section>
   );

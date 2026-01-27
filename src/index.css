@@ -1,8 +1,8 @@
 /*ROOT*/
 :root {
-  --bg-main: #0b0b0b;        
-  --bg-dark: #151515;        
-  --primary: #ff6a00;        
+  --bg-main: #0b0b0b;
+  --bg-dark: #151515;
+  --primary: #ff6a00;
   --primary-hover: #ff8c1a;
   --text-main: #ffffff;
   --text-muted: #b5b5b5;
@@ -19,27 +19,24 @@
 }
 
 /*GLOBAL*/
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-body{
-  min-height: 100vh;
-  background-color: var(--bg-main);
-  font-family: Arial, sans-serif;
-}
 
 /*TEXT*/
-h1{
+h1 {
   font-size: 3rem;
   line-height: 1.1;
   color: white;
 }
-h2,h3,h4{
+h2,
+h3,
+h4 {
   color: var(--text-main);
 }
-p{
+p {
   color: var(--text-muted);
   line-height: 1.6;
 }
@@ -72,7 +69,7 @@ button:hover {
   background-color: var(--primary);
   border-color: var(--primary-hover);
   transform: scale(1.05);
-  box-shadow: 0 10px 25px rgba(255,106,0,0.35);
+  box-shadow: 0 10px 25px rgba(255, 106, 0, 0.35);
 }
 button:focus,
 button:focus-visible {
@@ -87,10 +84,12 @@ button:focus-visible {
   background-color: var(--bg-dark);
   border-radius: 16px;
   padding: 2rem;
-  box-shadow: 0 15px 40px rgba(0,0,0,0.6);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 .card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 25px 60px rgba(255,106,0,0.15);
+  box-shadow: 0 25px 60px rgba(255, 106, 0, 0.15);
 }

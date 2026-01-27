@@ -1,12 +1,9 @@
+import React from "react";
+import "../styles/Home.css";
+
 function Home() {
   return (
     <>
-      {/* HEADER */}
-      {/* <header className="header">
-        <h1>ST-GYM</h1>
-        <p>Transformez votre corps, améliorez votre vie</p>
-      </header> */}
-
       <section className="why-hero">
         <div className="why-overlay"></div>
 
