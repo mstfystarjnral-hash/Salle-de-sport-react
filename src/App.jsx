@@ -12,7 +12,7 @@ function App() {
     <>
       <Navbar setPage={setPage} currentPage={page} />
 
-      {page === "home" && <Home />}
+      {page === "home" && <Home setPage={setPage} />}
       {page === "about" && <About />}
       {page === "services" && <Services />}
       {page === "contact" && <Contact />}

@@ -1,7 +1,7 @@
 import React from "react";
 import "../styles/Home.css";
 
-function Home() {
+function Home({ setPage }) {
   return (
     <>
       <section className="why-hero">
@@ -22,7 +22,9 @@ function Home() {
             encadrement professionnel et d’une ambiance motivante.
           </p>
 
-          <button className="cta-btn">Devenez un membre</button>
+          <button className="cta-btn" onClick={() => setPage("services")}>
+            Devenez un membre
+          </button>
         </div>
       </section>
 
