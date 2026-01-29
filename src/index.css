@@ -18,6 +18,16 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+  /* LIGHT MODE */
+body.light {
+  --bg-main: #f4f4f5;
+  --bg-dark: #ffffff;
+  --primary: #ff6a00;
+  --primary-hover: #ff8c1a;
+  --text-main: #111827;
+  --text-muted: #4b5563;
+}
+
 /*GLOBAL*/
 * {
   margin: 0;
@@ -92,4 +102,10 @@ button:focus-visible {
 .card:hover {
   transform: translateY(-8px);
   box-shadow: 0 25px 60px rgba(255, 106, 0, 0.15);
+}
+
+body, .card, section, a, button, h1, h2, h3, h4, p {
+  transition: background-color 0.3s ease,
+              color 0.3s ease,
+              box-shadow 0.3s ease;
 }

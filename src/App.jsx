@@ -7,7 +7,6 @@ import Contact from "./components/Contact.jsx";
 
 function App() {
   const [page, setPage] = useState("home");
-
   return (
     <>
       <Navbar setPage={setPage} currentPage={page} />
@@ -19,5 +18,4 @@ function App() {
     </>
   );
 }
-
 export default App;
